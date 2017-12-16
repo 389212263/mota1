@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "24ac3e77-ba25-4688-a26c-e071e7983041",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Actor01-Braver01_1_1": {
+      "ver": "1.0.3",
+      "uuid": "8300af92-02ad-4ceb-a1bc-0ec45183ba01",
+      "rawTextureUuid": "24ac3e77-ba25-4688-a26c-e071e7983041",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 32,
+      "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

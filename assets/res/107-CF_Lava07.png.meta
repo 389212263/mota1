@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "80bfd6a0-1b58-42bd-ae61-d85fc9a29cc8",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "107-CF_Lava07": {
+      "ver": "1.0.3",
+      "uuid": "ab51fe6f-8f8c-4419-b038-d1f9d9894b19",
+      "rawTextureUuid": "80bfd6a0-1b58-42bd-ae61-d85fc9a29cc8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 128,
+      "height": 32,
+      "rawWidth": 128,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

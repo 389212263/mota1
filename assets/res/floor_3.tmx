@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="13" height="13" tilewidth="32" tileheight="32" nextobjectid="5">
+ <tileset firstgid="1" name="icon" tilewidth="32" tileheight="32" tilecount="28" columns="4">
+  <image source="icon.png" width="128" height="224"/>
+  <tile id="0">
+   <properties>
+    <property name="type" value="yellow_key"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="type" value="blue_key"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="type" value="red_key"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="type" value="big_key"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="type" value="blue_stone"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="type" value="red_stone"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="type" value="red_blood"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="type" value="blue_blood"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="type" value="skip_floor"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="29" name="map" tilewidth="32" tileheight="32" tilecount="32" columns="4">
+  <image source="map.png" width="128" height="256"/>
+  <tile id="8">
+   <properties>
+    <property name="type" value="yellow_door"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="type" value="DownStair"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="type" value="UpStair"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="61" name="monster" tilewidth="32" tileheight="32" tilecount="192" columns="4">
+  <image source="monster.png" width="128" height="1538"/>
+ </tileset>
+ <layer name="floor" width="13" height="13">
+  <data encoding="csv">
+29,29,29,29,29,29,29,29,29,29,29,29,29,
+29,29,29,29,29,29,29,29,29,29,29,29,29,
+29,29,29,29,29,29,29,29,29,29,29,29,29,
+29,29,29,29,29,29,29,29,29,29,29,29,29,
+29,29,29,29,29,29,29,29,29,29,29,29,29,
+29,29,29,29,29,29,29,29,29,29,29,29,29,
+29,29,29,29,29,29,29,29,29,29,29,29,29,
+29,29,29,29,29,29,29,29,29,29,29,29,29,
+29,29,29,29,29,29,29,29,29,29,29,29,29,
+29,29,29,29,29,29,29,29,29,29,29,29,29,
+29,29,29,29,29,29,29,29,29,29,29,29,29,
+29,29,29,29,29,29,29,29,29,29,29,29,29,
+29,29,29,29,29,29,29,29,29,29,29,29,29
+</data>
+ </layer>
+ <layer name="barrier" width="13" height="13">
+  <data encoding="csv">
+30,30,30,30,30,30,30,30,30,30,30,30,30,
+30,0,0,30,0,0,0,30,0,30,0,0,30,
+30,0,0,30,0,0,0,30,0,0,0,0,30,
+30,0,0,30,0,0,0,30,0,30,30,30,30,
+30,0,30,30,30,0,30,30,0,30,0,0,30,
+30,0,0,0,0,0,0,0,0,0,0,0,30,
+30,0,30,30,0,0,0,30,0,30,30,30,30,
+30,0,0,30,30,0,30,30,0,30,0,0,30,
+30,0,0,30,0,0,0,30,0,0,0,0,30,
+30,0,0,30,0,0,0,30,0,30,30,30,30,
+30,30,30,30,30,0,30,30,0,30,0,0,30,
+30,53,0,0,0,0,0,30,0,0,0,54,30,
+30,30,30,30,30,30,30,30,30,30,30,30,30
+</data>
+ </layer>
+ <layer name="door" width="13" height="13">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,37,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,37,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,37,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,37,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,37,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="prop" width="13" height="13">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1,7,0,1,12,1,0,0,0,0,11,0,
+0,0,11,0,12,1,12,0,0,0,0,0,0,
+0,0,0,0,1,2,1,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,11,0,
+0,0,1,0,0,0,0,0,0,0,0,1,0,
+0,11,8,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="monster" width="13" height="13">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,77,0,0,
+0,93,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,221,0,
+0,0,0,77,0,0,0,61,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,109,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,93,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,65,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="players" visible="0">
+  <object id="1" name="UpPoint" x="80.3636" y="368">
+   <ellipse/>
+  </object>
+  <object id="2" name="DownPoint" x="336" y="368.182">
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>
